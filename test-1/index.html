@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Додзё Медиа — цифровое ремесло с измеримым результатом."
+    />
+    <title>Додзё Медиа</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      as="image"
+      type="image/avif"
+      href="./assets/images/hero-workshop-1200.avif"
+      imagesrcset="
+        ./assets/images/hero-workshop-700.avif 700w,
+        ./assets/images/hero-workshop-1200.avif 1200w,
+        ./assets/images/hero-workshop-2252.avif 2252w
+      "
+      imagesizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1247px) calc(100vw - 48px), 1200px"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="site-header__brand" href="#top" aria-label="Додзё Медиа — на главную">
+        Додзё Медиа
+      </a>
+
+      <nav class="site-header__nav" aria-label="Основная навигация">
+        <a href="#projects">Проекты</a>
+        <a href="#approach">Подход</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a
+        class="button button--primary site-header__action"
+        href="mailto:hello@dojo-media.com"
+      >
+        <span>Обсудить проект →</span>
+      </a>
+
+      <button
+        class="site-header__menu-toggle"
+        type="button"
+        aria-label="Открыть меню"
+        aria-controls="mobile-navigation"
+        aria-expanded="false"
+      >
+        <span class="site-header__menu-icon" aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <nav
+      class="mobile-navigation"
+      id="mobile-navigation"
+      aria-label="Мобильная навигация"
+      hidden
+    >
+      <a class="mobile-navigation__link" href="#projects">Проекты</a>
+      <a class="mobile-navigation__link" href="#approach">Подход</a>
+      <a class="mobile-navigation__link" href="#contacts">Контакты</a>
+      <a
+        class="button button--primary mobile-navigation__action"
+        href="mailto:hello@dojo-media.com"
+      >
+        <span>Обсудить проект →</span>
+      </a>
+    </nav>
+
+    <main>
+      <section class="hero" id="approach" aria-labelledby="hero-title">
+        <p class="hero__eyebrow">САЙТЫ · ПОИСК · СМЫСЛ</p>
+
+        <div class="hero__intro">
+          <div class="hero__title-column">
+            <h1 class="hero__title" id="hero-title">
+              Цифровое<br class="hero__mobile-break" /> ремесло.<br />Измеримый<br
+                class="hero__mobile-break"
+              />
+              результат.
+            </h1>
+          </div>
+
+          <div class="hero__description">
+            <p class="hero__lead">
+              Собираем сайты, поиск и рекламу в единую систему. Помогаем амбициозным
+              брендам расти.
+            </p>
+            <p class="hero__location">ИЗ ЯРОСЛАВЛЯ — В ЛЮБУЮ ТОЧКУ МИРА</p>
+          </div>
+        </div>
+
+        <img
+          class="hero__image"
+          src="./assets/images/hero-workshop-1200.avif"
+          srcset="
+            ./assets/images/hero-workshop-700.avif 700w,
+            ./assets/images/hero-workshop-1200.avif 1200w,
+            ./assets/images/hero-workshop-2252.avif 2252w
+          "
+          sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1247px) calc(100vw - 48px), 1200px"
+          alt="Мастера за общей работой с современными цифровыми инструментами"
+          width="1200"
+          height="482"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </section>
+
+      <section class="selected-projects" id="projects" aria-labelledby="projects-title">
+        <div class="selected-projects__heading">
+          <h2 class="selected-projects__title" id="projects-title">Избранные работы</h2>
+          <p class="selected-projects__meta">ТРИ ПРОЕКТА. ТРИ ИСТОРИИ.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <img
+              class="project-card__image"
+              src="./assets/images/project-briskly-352.avif"
+              srcset="
+                ./assets/images/project-briskly-352.avif 352w,
+                ./assets/images/project-briskly-704.avif 704w
+              "
+              sizes="(max-width: 767px) calc(100vw - 72px), 352px"
+              alt="Фирменная карточка BRISKLY среди тёмно-красных листьев"
+              width="352"
+              height="220"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+            />
+            <h3 class="project-card__title">БРИСКЛИ</h3>
+            <p class="project-card__tags">Сайт · Брендинг · Реклама</p>
+            <a
+              class="project-card__link"
+              href="#contacts"
+              aria-label="Смотреть проект БРИСКЛИ"
+            >
+              Смотреть проект →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <img
+              class="project-card__image"
+              src="./assets/images/project-trade-overseas-352.avif"
+              srcset="
+                ./assets/images/project-trade-overseas-352.avif 352w,
+                ./assets/images/project-trade-overseas-704.avif 704w
+              "
+              sizes="(max-width: 767px) calc(100vw - 72px), 352px"
+              alt="Грузовой порт с кораблём, кранами и контейнерами"
+              width="352"
+              height="220"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+            />
+            <h3 class="project-card__title">ТРЕЙД ОВЕРСИЗ</h3>
+            <p class="project-card__tags">Сайт · Стратегия · Реклама</p>
+            <a
+              class="project-card__link"
+              href="#contacts"
+              aria-label="Смотреть проект ТРЕЙД ОВЕРСИЗ"
+            >
+              Смотреть проект →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <img
+              class="project-card__image"
+              src="./assets/images/project-guest-court-352.avif"
+              srcset="
+                ./assets/images/project-guest-court-352.avif 352w,
+                ./assets/images/project-guest-court-704.avif 704w
+              "
+              sizes="(max-width: 767px) calc(100vw - 72px), 352px"
+              alt="Фасад исторического здания с арочными окнами"
+              width="352"
+              height="220"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+            />
+            <h3 class="project-card__title">ГОСТИНЫЙ ДВОР</h3>
+            <p class="project-card__tags">Сайт · Брендинг · Стратегия</p>
+            <a
+              class="project-card__link"
+              href="#contacts"
+              aria-label="Смотреть проект ГОСТИНЫЙ ДВОР"
+            >
+              Смотреть проект →
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contacts" aria-labelledby="contact-title">
+      <div class="site-footer__content">
+        <div class="site-footer__copy">
+          <h2 class="site-footer__title" id="contact-title">Начнём с вашей идеи.</h2>
+          <a class="site-footer__email" href="mailto:hello@dojo-media.com">
+            hello@dojo-media.com
+          </a>
+        </div>
+
+        <a class="button button--primary site-footer__action" href="mailto:hello@dojo-media.com">
+          <span>Обсудить проект →</span>
+        </a>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">© 2026 Додзё Медиа</p>
+        <p class="site-footer__tagline">Мастерство начинается с деталей.</p>
+      </div>
+    </footer>
+  </body>
+</html>

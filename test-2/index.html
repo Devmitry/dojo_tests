@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="./assets/fonts/Montserrat-Variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/images/aligners.jpg"
+      as="image"
+      type="image/jpeg"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="./assets/images/specialist-mobile.png"
+      as="image"
+      type="image/png"
+      media="(max-width: 599px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="./assets/images/specialist-desktop.png"
+      as="image"
+      type="image/png"
+      media="(min-width: 600px)"
+      fetchpriority="high"
+    />
+    <meta
+      name="description"
+      content="Услуги стоматологической клиники и запись на бесплатную консультацию."
+    />
+    <title>Услуги стоматологии</title>
+    <link rel="stylesheet" href="./styles.css?v=20261019-61" />
+    <script src="./site-config.js?v=20261019-58" defer></script>
+    <script src="./script.js?v=20261019-58" defer></script>
+  </head>
+  <body>
+    <svg class="svg-definitions" aria-hidden="true" focusable="false">
+      <defs>
+        <clipPath id="service-shape-20" clipPathUnits="userSpaceOnUse">
+          <path
+            d="M364 0C375.046 0 384 8.9543 384 20V292C384 310.856 384 320.284 378.142 326.142C372.284 332 362.856 332 344 332H158C146.954 332 138 340.954 138 352C138 363.201 138 368.802 135.82 373.08C133.903 376.843 130.843 379.903 127.08 381.82C122.802 384 117.201 384 106 384H30C13.4315 384 0 370.569 0 354V30C0 13.4315 13.4315 0 30 0H364Z"
+          />
+        </clipPath>
+        <clipPath id="service-shape-30" clipPathUnits="userSpaceOnUse">
+          <path
+            d="M364 0C375.046 0 384 8.9543 384 20V292C384 310.856 384 320.284 378.142 326.142C372.284 332 362.856 332 344 332H158C146.954 332 138 340.954 138 352C138 363.201 138 368.802 135.82 373.08C133.903 376.843 130.843 379.903 127.08 381.82C122.802 384 117.201 384 106 384H30C13.4315 384 0 370.569 0 354V30C0 13.4315 13.4315 0 30 0H364Z"
+          />
+        </clipPath>
+        <clipPath id="service-shape-mixed" clipPathUnits="userSpaceOnUse">
+          <path
+            d="M364 0C375.046 0 384 8.9543 384 20V292C384 310.856 384 320.284 378.142 326.142C372.284 332 362.856 332 344 332H158C146.954 332 138 340.954 138 352C138 363.201 138 368.802 135.82 373.08C133.903 376.843 130.843 379.903 127.08 381.82C122.802 384 117.201 384 106 384H30C13.4315 384 0 370.569 0 354V30C0 13.4315 13.4315 0 30 0H364Z"
+          />
+        </clipPath>
+        <clipPath id="service-shape-mobile" clipPathUnits="userSpaceOnUse">
+          <path
+            d="M145.979 0C150.409 0.000207262 154 3.59085 154 8.02051V109.057C154 116.619 154 120.4 151.651 122.749C149.301 125.099 145.52 125.099 137.958 125.099H16.0417C8.47955 125.099 4.6985 125.099 2.34925 122.749C0 120.4 0 116.619 0 109.057V12.0312C0 5.38657 5.38657 0 12.0312 0H145.979Z"
+          />
+        </clipPath>
+        <clipPath id="service-shape-mobile-regular" clipPathUnits="userSpaceOnUse">
+          <path d="M145.979 0C150.408 0 154 3.59087 154 8.02051V109.058C154 116.62 154 120.401 151.651 122.75C149.301 125.1 145.52 125.1 137.958 125.1H16.0417C8.47955 125.1 4.6985 125.1 2.34925 122.75C0 120.401 0 116.62 0 109.058V8.02051C0.00017428 3.59087 3.59083 0 8.02051 0H145.979Z" />
+        </clipPath>
+        <clipPath id="desktop-specialist-clip" clipPathUnits="userSpaceOnUse">
+          <rect class="consultation-photo-overflow" x="0" y="0" width="1199" height="31" />
+          <path
+            class="consultation-photo-clip"
+            transform="translate(0 31)"
+            d="M1145.3 14.6296L1184.34 53.6346C1193.73 63.0127 1199 75.7368 1199 89.005V293C1199 309.569 1185.57 323 1169 323H127.378C114.125 323 101.413 317.738 92.0378 308.37L52.9996 269.365C43.6136 259.987 38.34 247.263 38.34 233.995V182.378C38.34 169.117 33.0721 156.4 23.6953 147.023L14.6447 137.972C5.26782 128.595 0 115.878 0 102.617V30C0 13.4315 13.4315 0 30 0H1109.96C1123.22 0 1135.93 5.26202 1145.3 14.6296Z"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+
+    <main class="page-shell">
+      <section class="services" aria-labelledby="services-title">
+        <h1 class="services__title" id="services-title">Услуги</h1>
+
+        <div
+          class="services__viewport"
+          tabindex="0"
+          role="region"
+          aria-label="Список стоматологических услуг"
+        >
+          <div class="services__track" id="services-track"></div>
+        </div>
+      </section>
+
+      <section
+        class="consultation"
+        aria-labelledby="consultation-title"
+      >
+        <svg
+          class="consultation__background"
+          viewBox="0 0 1199 323"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <defs>
+            <radialGradient
+              id="form-gradient"
+              cx="0"
+              cy="0"
+              r="1"
+              gradientTransform="matrix(-278.05 278.834 551.64 253.613 814.833 44.1661)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#233A5A" />
+              <stop offset="1" stop-color="#3C6AB9" />
+            </radialGradient>
+          </defs>
+          <path
+            id="consultation-background-path"
+            class="consultation-background-shape"
+            fill="url(#form-gradient)"
+            d="M1145.3 14.6296L1184.34 53.6346C1193.73 63.0127 1199 75.7368 1199 89.005V293C1199 309.569 1185.57 323 1169 323H127.378C114.125 323 101.413 317.738 92.0378 308.37L52.9996 269.365C43.6136 259.987 38.34 247.263 38.34 233.995V182.378C38.34 169.117 33.0721 156.4 23.6953 147.023L14.6447 137.972C5.26782 128.595 0 115.878 0 102.617V30C0 13.4315 13.4315 0 30 0H1109.96C1123.22 0 1135.93 5.26202 1145.3 14.6296Z"
+          />
+        </svg>
+
+        <svg
+          class="consultation__art"
+          viewBox="0 0 1199 354"
+          preserveAspectRatio="none"
+          role="img"
+          aria-label="Специалист стоматологической клиники"
+        >
+          <defs>
+            <clipPath id="consultation-art-clip" clipPathUnits="userSpaceOnUse">
+              <path
+                class="consultation-clip-shape"
+                d="M1145.3 14.6296L1184.34 53.6346C1193.73 63.0127 1199 75.7368 1199 89.005V324C1199 340.569 1185.57 354 1169 354H127.378C114.125 354 101.413 348.738 92.0378 339.37L52.9996 300.365C43.6136 290.987 38.34 278.263 38.34 264.995V213.378C38.34 200.117 33.0721 187.4 23.6953 178.023L14.6447 168.972C5.26782 159.595 0 146.878 0 133.617V30C0 13.4315 13.4315 0 30 0H1109.96C1123.22 0 1135.93 5.26202 1145.3 14.6296Z"
+              />
+            </clipPath>
+          </defs>
+          <image
+            class="consultation__specialist consultation__specialist--mobile"
+            href=""
+            x="32.5"
+            y="1"
+            width="357"
+            height="353"
+            preserveAspectRatio="none"
+            clip-path="url(#consultation-art-clip)"
+          />
+        </svg>
+
+        <div class="consultation__specialist-frame" aria-hidden="true">
+          <img
+            class="consultation__specialist-photo"
+            src=""
+            width="700"
+            height="1050"
+            alt=""
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+
+        <div class="consultation__glow" aria-hidden="true"></div>
+
+        <div class="consultation__content">
+          <h2 class="consultation__title" id="consultation-title">
+            <span class="consultation__title-desktop">
+              Запишитесь на бесплатную<br />консультацию прямо сейчас!
+            </span>
+            <span class="consultation__title-mobile">
+              Запишитесь<br />на бесплатную<br />консультацию прямо<br />сейчас!
+            </span>
+          </h2>
+
+          <p class="consultation__description">
+            Хотите узнать подробнее? Наши специалисты ответят на все ваши вопросы и
+            помогут<br class="consultation__description-break" /> выбрать оптимальный путь к
+            здоровой и красивой улыбке.
+          </p>
+
+          <form class="appointment-form" id="appointment-form" novalidate>
+            <div class="appointment-form__row">
+              <div class="field">
+                <label class="field__label" for="full-name">Введите ФИО</label>
+                <input
+                  class="field__input"
+                  id="full-name"
+                  name="fullName"
+                  type="text"
+                  placeholder="ФИО"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="phone">Введите номер телефона</label>
+                <input
+                  class="field__input"
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  inputmode="tel"
+                  placeholder="+7..."
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+
+              <button class="appointment-form__submit" type="submit">
+                Записаться на прием
+              </button>
+            </div>
+
+            <label class="consent">
+              <input class="consent__input" type="checkbox" name="consent" required checked />
+              <span class="consent__box" aria-hidden="true">
+                <svg viewBox="0 0 20 20" focusable="false">
+                  <path
+                    d="M5.25 10.514C6.191 11.198 8.074 13.081 8.845 14.365C9.786 12.311 12.182 7.689 14.75 5.635"
+                  />
+                </svg>
+              </span>
+              <span class="consent__text">
+                я даю свое согласие на
+                <a href="#personal-data">обработку персональных данных</a>
+              </span>
+            </label>
+
+            <p class="appointment-form__status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
